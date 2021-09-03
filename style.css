@@ -40,6 +40,7 @@ ul , a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     padding: 2rem 1.5rem;
 
@@ -58,7 +59,7 @@ ul , a {
     padding: 1rem;
     color: black;
 
-    transition: ease 0.5s;
+    transition: all 0.7s ease 0s;
 
 }
 
@@ -405,6 +406,10 @@ footer {
         flex-direction: column;
     }
 
+    .logo {
+        width: 120px;
+    }
+
     .illustration {
         width: 100%;
     }
@@ -430,10 +435,11 @@ footer {
     .content-three .form button {
         width: 100%;
     }
+}
 
-    /* .header {
-        flex-wrap: wrap;
-    } */
-
+@media screen and (max-width: 460px) {
+    .header ul {
+        gap: 0.5rem;
+    }
 }
 
